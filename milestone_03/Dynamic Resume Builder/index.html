@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic resume builder</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script> 
+</head>
+<body>
+     <h1> Dynamic Resume Builder</h1>
+     <form id="resume-form">
+        <fieldset>
+            <legend style="color: rgb(0, 0, 0);"><h2><b> Personal Information</b></h2></legend>
+            <label for="name"> Name :</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="email"> Email :</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+
+            <label for="phone"> Phone Number :</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number" required>
+        </fieldset>
+
+        <fieldset>
+            <legend style="color: rgb(0, 0, 0);"><h2><b> Education </b></h2> </legend>
+            <label for="education"> Education :</label>
+            <textarea id="education" placeholder="Enter your education" rows="3" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend style="color: rgb(0, 0, 0);"><h2><b> Experience </b></h2> </legend>
+            <label for="experience"> Education :</label>
+            <textarea id="experience" placeholder="Enter your work experience" rows="3" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend style="color: rgb(0, 0, 0);"><h2><b> Skills </b></h2> </legend>
+            <label for="skills"> Education :</label>
+            <textarea id="skills" placeholder="Enter your skills" rows="3" required></textarea>
+     
+       </fieldset>
+    
+       <button type="submit"> <b> GENERATE RESUME</b></button>
+    </form>
+    <br>
+
+    <!-- Dynamic Resume-->
+
+    <div id="resume-display">
+    <!-- Resume will be generated -->
+
+    <script src="script.js"> </script>
+    </div>
+</body>
+</html>
